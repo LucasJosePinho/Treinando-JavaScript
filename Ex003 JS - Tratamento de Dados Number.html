@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+    <style>
+        body{
+            font-style: normal;
+        }
+        h1 {
+            font-weight: 400;
+            font-synthesis: style;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tratamento de Dados</h1>
+    <hr>
+    <script>
+        /*
+        var nome = window.prompt('Qual é seu nome?') //Recebe o valor enviado pelo usuário no prompt
+        window.alert('É um prazer ti conhecer,'+nome) //Enviando resposta
+        */
+        var n1 = Number.parseInt(window.prompt('Digite um valor: '))
+        var n2 = Number.parseInt(window.prompt('Digite o segundo valor: '))
+        //window.prompt = string
+        //Number.parseInt(n)
+        //Number.parseFloat(n)
+        //Number(n)
+        //String(n)
+        //n.toString()
+        //n.toFixed(numero de casas decimais)
+
+        var s = n1+n2
+        window.alert('A soma dos valores é '+s)
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+        window.alert(n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'}))
+    </script>
+</body>
+</html>
